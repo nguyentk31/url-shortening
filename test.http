@@ -1,0 +1,36 @@
+### Health check
+GET http://127.0.0.1:8088/v1/health
+
+
+### Shorten URL
+POST http://127.0.0.1:8088/v1/shorten
+Content-Type: application/json
+
+{
+  "url": "google.com"
+}
+
+
+### Retrieve Short URL
+GET http://127.0.0.1:8088/v1/shorten/UuKIMkP
+
+
+### Update Short URL
+PUT http://127.0.0.1:8088/v1/shorten/UuKIMkP
+Content-Type: application/json
+
+{
+  "url": "https://www.google.com/abc/ks"
+}
+
+
+### Delete Short URL
+DELETE http://127.0.0.1:8088/v1/shorten/UuKH4td
+
+
+### Get URL Stats
+GET http://127.0.0.1:8088/v1/shorten/UuKIMkP/stats
+
+
+### Increment Access Count
+POST http://127.0.0.1:8088/v1/shorten/UuKIMkP/increment

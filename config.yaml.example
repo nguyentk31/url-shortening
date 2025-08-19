@@ -1,0 +1,13 @@
+server:
+    host: 127.0.0.1
+    port: 8080
+    read_timeout: 5s
+    write_timeout: 5s
+database:
+    host: 127.0.0.1
+    port: 5432
+    sslmode: disable
+    user: myuser
+    password: supersecret
+    name: mydb
+    timeout: 60s

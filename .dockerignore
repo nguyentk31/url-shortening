@@ -1,0 +1,8 @@
+# ignore all
+*
+
+# except source files
+!go.mod
+!go.sum
+!main.go
+!internal/

@@ -1,0 +1,8 @@
+services:
+  server:
+    image: myapp:latest
+    container_name: myapp_server
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./config.yaml:/usr/src/app/config.yaml
